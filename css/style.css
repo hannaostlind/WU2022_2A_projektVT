@@ -4,6 +4,19 @@
     box-sizing: border-box;
 }
 
+.header-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#rubrik {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+#undertext {
+    font-size: 1rem;
+}
 nav /*nav-taggen blir en flex-förälder*/{
     display: flex;
     justify-content: flex-end;
