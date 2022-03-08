@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.gridWrapper {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 100px 50px 1fr;
+    grid-template-areas: 
+    "he he he he he"
+    "nav nav nav nav nav"
+    "na na na na na"
+    "br br br br br"
+    "ad ad ad ad ad"
+    "ma ma ma ma ma"
+    "fo fo fo fo fo"
+;
+}
+
+.header {
+    grid-area: he;
+    display: grid;
+    width: 100%;
+    height: 100px;
+    text-align: left;
+    background: #1abc9c;
+    position: fixed;
+}
+
+.namn {
+    grid-area: na;
+    display: grid;
+    justify-content: center;
+    width: auto;
+    height: 100px;
+    color: black;
+    font-size: 2.5rem;
+    background-color: darkcyan;
+    
+}
+
+.brödtext {
+    grid-area: br;
+    width: auto;
+    height: 150px;
+    display: grid;
+    justify-content: center;
+    font-size: 1.7rem;
+    color: black;
+    background-color: cyan;
+}
+
+.adress{
+    color: black;
+    grid-area: ad;
+    font-size: 1.6rem;
+    height: 50px;
+    display: grid;
+    justify-content: center;
+    background-color: coral;
+
+}
+.maps {
+    grid-area: ma;
+    display: grid;
+    height: 400px;
+    width: auto;
+}
+
+footer {
+    grid-area: fo;
+    color: black;
+    width: auto;
+    height: 70px;
+    bottom: 0;
+    display: grid;
+    justify-content: center;
+    background-color: cornflowerblue;
+}
+
+body {
+    background-color: rgb(196, 224, 215);
+}
