@@ -9,8 +9,8 @@
     grid-template-rows: 100px 50px 1fr;
     grid-template-areas: 
     "he he he he he"
-    "nav nav nav nav nav"
-    "na na na na na"
+    "n1 n1 n1 n1 n1"
+    "n2 n2 n2 n2 n2"
     "br br br br br"
     "ad ad ad ad ad"
     "ma ma ma ma ma"
@@ -29,7 +29,7 @@
 }
 
 .namn {
-    grid-area: na;
+    grid-area: n2;
     display: grid;
     justify-content: center;
     width: auto;
