@@ -2,15 +2,66 @@
     margin: 0;
     padding: 0;
 }
-.gridWrapper {
+
+.Wrapper1 {
     display: grid;
     position: relative;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 100px 50px 1fr;
     grid-template-areas: 
     "he he he he he"
-    "n1 n1 n1 n1 n1"
-    "n2 n2 n2 n2 n2"
+    "fl fl fl fl fl"
+    "nv nv nv nv nv"
+    "br br br br br"
+    "ad ad ad ad ad"
+    "ma ma ma ma ma"
+    "fo fo fo fo fo"
+;
+}
+
+.Wrapper2 {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 100px 50px 1fr;
+    grid-template-areas: 
+    "he he he he he"
+    "fl fl fl fl fl"
+    "nv nv nv nv nv"
+    "br br br br br"
+    "ad ad ad ad ad"
+    "ma ma ma ma ma"
+    "fo fo fo fo fo"
+;
+}
+
+.Wrapper3 {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 100px 50px 1fr;
+    grid-template-areas: 
+    "he he he he he"
+    "fl fl fl fl fl"
+    "nv nv nv nv nv"
+    "br br br br br"
+    "ad ad ad ad ad"
+    "ma ma ma ma ma"
+    "fo fo fo fo fo"
+;
+}
+
+
+
+.Wrapper4 {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 100px 50px 1fr;
+    grid-template-areas: 
+    "he he he he he"
+    "fl fl fl fl fl"
+    "nv nv nv nv nv"
     "br br br br br"
     "ad ad ad ad ad"
     "ma ma ma ma ma"
@@ -19,36 +70,56 @@
 }
 
 .header {
+ /* Style the header */
     grid-area: he;
-    display: grid;
-    width: 100%;
-    height: 100px;
-    text-align: left;
-    background: #1abc9c;
+    padding: 10px 16px;
+    background: #555;
+    color: #f1f1f1;
+}
+  
+  /* Page content */
+.content {
+    padding: 16px;
+}
+  
+  /* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
     position: fixed;
+    top: 0;
+    width: 100%
+}
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 102px;
 }
 
-.namn {
-    grid-area: n2;
+.flygbild {
+    grid-area: fl;
     display: grid;
+    width: 100%;
+    height: auto;
+}
+
+
+.namn {
+    grid-area: nv;
     justify-content: center;
     width: auto;
     height: 100px;
     color: black;
     font-size: 2.5rem;
-    background-color: darkcyan;
-    
+    border: dotted pink;
 }
 
 .brödtext {
     grid-area: br;
     width: auto;
     height: 150px;
-    display: grid;
+    margin: 15px;
     justify-content: center;
     font-size: 1.7rem;
     color: black;
-    background-color: cyan;
 }
 
 .adress{
@@ -56,14 +127,10 @@
     grid-area: ad;
     font-size: 1.6rem;
     height: 50px;
-    display: grid;
     justify-content: center;
-    background-color: coral;
-
 }
 .maps {
     grid-area: ma;
-    display: grid;
     height: 400px;
     width: auto;
 }
@@ -74,9 +141,7 @@ footer {
     width: auto;
     height: 70px;
     bottom: 0;
-    display: grid;
     justify-content: center;
-    background-color: cornflowerblue;
 }
 
 body {
