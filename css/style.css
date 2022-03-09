@@ -6,144 +6,48 @@
 .Wrapper1 {
     display: grid;
     position: relative;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 100px 50px 1fr;
-    grid-template-areas: 
-    "he he he he he"
-    "fl fl fl fl fl"
-    "nv nv nv nv nv"
-    "br br br br br"
-    "ad ad ad ad ad"
-    "ma ma ma ma ma"
-    "fo fo fo fo fo"
-;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-template-rows: 40px 90px 100px 30px 70px 100px 90px 80px 50px  ;
+    grid-template-areas:
+    "mh mh mh"
+    "He He He"
+    "nav nav nav"
+    "ru ru ru"
+    "ab ab im"
+    "br br im"
+    "l1 l2 l3"
+    "li ik em"
+    ;
 }
 
-.Wrapper2 {
-    display: grid;
-    position: relative;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 100px 50px 1fr;
-    grid-template-areas: 
-    "he he he he he"
-    "fl fl fl fl fl"
-    "nv nv nv nv nv"
-    "br br br br br"
-    "ad ad ad ad ad"
-    "ma ma ma ma ma"
-    "fo fo fo fo fo"
-;
-}
-
-.Wrapper3 {
-    display: grid;
-    position: relative;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 100px 50px 1fr;
-    grid-template-areas: 
-    "he he he he he"
-    "fl fl fl fl fl"
-    "nv nv nv nv nv"
-    "br br br br br"
-    "ad ad ad ad ad"
-    "ma ma ma ma ma"
-    "fo fo fo fo fo"
-;
+.mini-header {
+    grid-area: mh;
+    background-color: cornflowerblue;
 }
 
 
-
-.Wrapper4 {
-    display: grid;
-    position: relative;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
-    grid-template-areas: 
-    "he he he he he"
-    "fl fl fl fl fl"
-    "nv nv nv nv nv"
-    "br br br br br"
-    "ad ad ad ad ad"
-    "ma ma ma ma ma"
-    "fo fo fo fo fo"
-;
-}
 
 .header {
- /* Style the header */
     grid-area: he;
-    padding: 10px 16px;
-    background: #555;
-    color: #f1f1f1;
-}
-  
-  /* Page content */
-.content {
-    padding: 16px;
-}
-  
-  /* The sticky class is added to the header with JS when it reaches its scroll position */
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%
-}
-  
-  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-    padding-top: 102px;
+    background-color: rgba(100, 148, 237, 0.897);
 }
 
 .flygbild {
-    grid-area: fl;
-    display: grid;
-    width: 100%;
-    height: auto;
+    grid-area: nav;
+    background-color: rgba(100, 148, 237, 0.815);
 }
 
-
-.namn {
-    grid-area: nv;
-    justify-content: center;
-    width: auto;
-    height: 100px;
-    color: black;
-    font-size: 2.5rem;
-    border: dotted pink;
+#rubrik {
+    grid-area: ru;
+    border: dotted orange;
 }
 
-.brödtext {
+#brödtext {
     grid-area: br;
-    width: auto;
-    height: 150px;
-    margin: 15px;
-    justify-content: center;
-    font-size: 1.7rem;
-    color: black;
+    border: dotted rgb(255, 230, 0);
 }
 
-.adress{
+.text {
     color: black;
-    grid-area: ad;
-    font-size: 1.6rem;
-    height: 50px;
-    justify-content: center;
-}
-.maps {
-    grid-area: ma;
-    height: 400px;
-    width: auto;
-}
-
-footer {
-    grid-area: fo;
-    color: black;
-    width: auto;
-    height: 70px;
-    bottom: 0;
-    justify-content: center;
-}
-
-body {
-    background-color: rgb(196, 224, 215);
+    background-color: cyan;
 }
