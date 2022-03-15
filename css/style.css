@@ -16,8 +16,35 @@
     "s1 s1"
     "fo fo"
 ;
-grid-template-columns: repeat(2, 1fr);
+grid-template-columns: repeat(2);
 grid-template-rows: repeat(7, 1fr);
+}
+
+#title1 {
+    grid-area: ti1;
+    background-color: lightslategrey;
+    display: flex;
+    justify-content: center;
+}
+
+#brödtext1 {
+    grid-area: te1;
+    background-color: rgb(55, 159, 228);
+    padding: 10px 50px 20px;
+}
+
+#image-sid1 {
+    grid-area: im1;
+    width: 30vw;
+    height: 40vh;
+    background-color: lightseagreen;
+}
+
+.section1 {
+    grid-area: s1;
+    background-color: lightsalmon;
+    padding: 10px 50px 20px;
+
 }
 
 .wrapper2 {
@@ -75,14 +102,19 @@ grid-template-rows: repeat(8, 1fr);
 
 #title4 {
     grid-area: ti4;
+    background-color: lightyellow;
 }
 
 #brödtext4 {
     grid-area: br4;
+    background-color: lightskyblue;
 }
 
 #adress {
     grid-area: ad;
+    display: flex;
+    justify-content: center;
+    background-color: lightpink;
 }
 
 #maps {
@@ -100,7 +132,7 @@ grid-template-rows: repeat(8, 1fr);
     display: flex;
     align-items: stretch;
     justify-content: space-between;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     background: rgb(185, 216, 164);
@@ -109,23 +141,45 @@ grid-template-rows: repeat(8, 1fr);
 .header {
     grid-area: he;
     background-color: lightblue;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+#navigation-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 10px 10px;
+}
+.link-list {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+.link-list:hover {
+    color: chocolate;
 }
 
 .flygbild {
     grid-area: fl;
     width: 100%;
-    height: auto;
+    height: 250px;
 }
 
 .text {
+    margin: 4px;
     color: black;
     font-size: 1rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-
 .footer {
     grid-area: fo;
-
+    height: 60px;
+    bottom: 0;
+    padding: 10px 10px 20px;
+    background-color: rgb(182, 248, 248);
 }
 
