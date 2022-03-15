@@ -3,147 +3,129 @@
     padding: 0;
 }
 
-.Wrapper1 {
+.wrapper1 {
     display: grid;
-    position: relative;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 100px 50px 1fr;
+    width: 100vw;
+    height: 100vh;
     grid-template-areas: 
-    "he he he he he"
-    "fl fl fl fl fl"
-    "nv nv nv nv nv"
-    "br br br br br"
-    "ad ad ad ad ad"
-    "ma ma ma ma ma"
-    "fo fo fo fo fo"
+    "mh mh"
+    "he he"
+    "fl fl"
+    "ti1 im1"
+    "te1 im1"
+    "s1 s1"
+    "fo fo"
 ;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(7, 1fr);
 }
 
-.Wrapper2 {
+.wrapper2 {
     display: grid;
-    position: relative;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 100px 50px 1fr;
+    width: 100vw;
+    height: 100vh;
     grid-template-areas: 
-    "he he he he he"
-    "fl fl fl fl fl"
-    "nv nv nv nv nv"
-    "br br br br br"
-    "ad ad ad ad ad"
-    "ma ma ma ma ma"
-    "fo fo fo fo fo"
+    "mh mh"
+    "he he"
+    "fl fl"
+    "ti2 in2"
+    "te2 in2"
+    "te2 in2"
+    "te2 im2"
+    "fo fo"
 ;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(8, 1fr);
 }
 
-.Wrapper3 {
+
+
+.wrapper3 {
     display: grid;
-    position: relative;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 100px 50px 1fr;
+    width: 100vw;
+    height: 100vh;
     grid-template-areas: 
-    "he he he he he"
-    "fl fl fl fl fl"
-    "nv nv nv nv nv"
-    "br br br br br"
-    "ad ad ad ad ad"
-    "ma ma ma ma ma"
-    "fo fo fo fo fo"
+    "mh mh"
+    "he he"
+    "fl fl"
+    "s3 s3"
+    "fo fo"
 ;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(7, 1fr);
 }
 
-
-
-.Wrapper4 {
+.wrapper4 {
     display: grid;
-    position: relative;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
-    grid-template-areas: 
-    "he he he he he"
-    "fl fl fl fl fl"
-    "nv nv nv nv nv"
-    "br br br br br"
-    "ad ad ad ad ad"
-    "ma ma ma ma ma"
-    "fo fo fo fo fo"
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas:
+    "mh"
+    "he"
+    "fl"
+    "ti4"
+    "br4"
+    "ad"
+    "ma"
+    "fo"
 ;
+grid-template-columns: repeat(1, 1fr);
+grid-template-rows: repeat(8, 1fr);
 }
 
-.header {
- /* Style the header */
-    grid-area: he;
-    padding: 10px 16px;
-    background: #555;
-    color: #f1f1f1;
+#title4 {
+    grid-area: ti4;
 }
-  
-  /* Page content */
-.content {
-    padding: 16px;
+
+#brödtext4 {
+    grid-area: br4;
 }
-  
-  /* The sticky class is added to the header with JS when it reaches its scroll position */
-.sticky {
+
+#adress {
+    grid-area: ad;
+}
+
+#maps {
+    grid-area: ma;
+}
+
+/* Styling för element som förekommer i alla html-dokument */
+.mini-text {
+    color: black;
+    margin: 10px;
+}
+
+.miniheader {
+    grid-area: mh;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
     position: fixed;
     top: 0;
-    width: 100%
+    width: 100%;
+    background: rgb(185, 216, 164);
+    color: #f1f1f1;
 }
-  
-  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-    padding-top: 102px;
+.header {
+    grid-area: he;
+    background-color: lightblue;
 }
 
 .flygbild {
     grid-area: fl;
-    display: grid;
     width: 100%;
     height: auto;
 }
 
-
-.namn {
-    grid-area: nv;
-    justify-content: center;
-    width: auto;
-    height: 100px;
+.text {
     color: black;
-    font-size: 2.5rem;
-    border: dotted pink;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.brödtext {
-    grid-area: br;
-    width: auto;
-    height: 150px;
-    margin: 15px;
-    justify-content: center;
-    font-size: 1.7rem;
-    color: black;
-}
 
-.adress{
-    color: black;
-    grid-area: ad;
-    font-size: 1.6rem;
-    height: 50px;
-    justify-content: center;
-}
-.maps {
-    grid-area: ma;
-    height: 400px;
-    width: auto;
-}
-
-footer {
+.footer {
     grid-area: fo;
-    color: black;
-    width: auto;
-    height: 70px;
-    bottom: 0;
-    justify-content: center;
+
 }
 
-body {
-    background-color: rgb(196, 224, 215);
-}
