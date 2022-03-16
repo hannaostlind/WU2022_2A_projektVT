@@ -5,7 +5,7 @@
 
 .wrapper1 {
     display: grid;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     grid-template-areas: 
     "mh mh"
@@ -22,14 +22,14 @@ grid-template-rows: repeat(7, 1fr);
 
 #title1 {
     grid-area: ti1;
-    background-color: lightslategrey;
+    border: solid;
     display: flex;
     justify-content: center;
 }
 
 #brödtext1 {
     grid-area: te1;
-    background-color: rgb(55, 159, 228);
+    border: solid;
     padding: 10px 50px 20px;
 }
 
@@ -37,39 +37,53 @@ grid-template-rows: repeat(7, 1fr);
     grid-area: im1;
     width: 30vw;
     height: 40vh;
-    background-color: lightseagreen;
+    border: solid;
+    padding: 15px 15px 15px;
 }
 
 .section1 {
     grid-area: s1;
-    background-color: lightsalmon;
+    border: solid;
     padding: 10px 50px 20px;
 
 }
 
 .wrapper2 {
     display: grid;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     grid-template-areas: 
-    "mh mh"
-    "he he"
-    "fl fl"
-    "ti2 in2"
-    "te2 in2"
-    "te2 in2"
-    "te2 im2"
-    "fo fo"
+    "mh mh mh"
+    "he he he"
+    "fl fl fl"
+    "ti2 ti2 in"
+    "te2 te2 in"
+    "te2 te2 in"
+    "te2 te2 im2"
+    "fo fo fo"
 ;
-grid-template-columns: repeat(2, 1fr);
+grid-template-columns: repeat(3, 1fr);
 grid-template-rows: repeat(8, 1fr);
 }
 
+#title-sid2 {
+    grid-area: ti2;
+}
 
+#info {
+    grid-area: in;
+    width: 100px;
+}
+
+#image-sid2 {
+    grid-area: im2;
+    width: auto;
+    height: 300px;
+}
 
 .wrapper3 {
     display: grid;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     grid-template-areas: 
     "mh mh"
@@ -84,7 +98,7 @@ grid-template-rows: repeat(7, 1fr);
 
 .wrapper4 {
     display: grid;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     grid-template-areas:
     "mh"
@@ -102,19 +116,19 @@ grid-template-rows: repeat(8, 1fr);
 
 #title4 {
     grid-area: ti4;
-    background-color: lightyellow;
+    border: solid;
 }
 
 #brödtext4 {
     grid-area: br4;
-    background-color: lightskyblue;
+    border: solid;
 }
 
 #adress {
     grid-area: ad;
     display: flex;
     justify-content: center;
-    background-color: lightpink;
+    border: solid;
 }
 
 #maps {
@@ -135,21 +149,27 @@ grid-template-rows: repeat(8, 1fr);
     position: sticky;
     top: 0;
     width: 100%;
-    background: rgb(185, 216, 164);
+    background: rgb(131, 172, 166);
     color: #f1f1f1;
 }
 .header {
     grid-area: he;
-    background-color: lightblue;
+    background-color: rgb(70, 134, 106);
     display: flex;
     align-items: stretch;
     justify-content: space-between;
+}
+#logga {
+    height: 50px;
+    width: auto;
+    padding: 10px 10px 10px;
 }
 #navigation-links {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-    padding: 10px 10px 10px;
+    width: 600px;
+    padding: 20px 10px 10px;
 }
 .link-list {
     text-decoration: none;
@@ -165,7 +185,7 @@ grid-template-rows: repeat(8, 1fr);
 .flygbild {
     grid-area: fl;
     width: 100%;
-    height: 250px;
+    height: 400px;
 }
 
 .text {
@@ -180,6 +200,9 @@ grid-template-rows: repeat(8, 1fr);
     height: 60px;
     bottom: 0;
     padding: 10px 10px 20px;
-    background-color: rgb(182, 248, 248);
+    background-color: rgb(70, 134, 106);
 }
 
+body {
+    background-color: rgb(214, 234, 224);
+}
