@@ -155,6 +155,11 @@ grid-template-rows: repeat(8, 1fr);
 }
 
 /* Styling för element som förekommer i alla html-dokument */
+
+body {
+    background-color: rgb(214, 234, 224);
+}
+
 .mini-text {
     color: black;
     margin: 10px;
@@ -203,8 +208,10 @@ grid-template-rows: repeat(8, 1fr);
 
 .flygbild {
     grid-area: fl;
-    width: 100%;
-    height: 50vh;
+    width: auto;
+    height: 55vh;
+    padding: 10px 10px 10px;
+    left: 100px;
 }
 
 .text {
@@ -214,6 +221,54 @@ grid-template-rows: repeat(8, 1fr);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+/* Styling för social media bar */
+.fl-fl {
+    background: #000000;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 4px;
+    width: 190px;
+    position: fixed;
+    right: -160px;
+    z-index: 1000;
+    font: normal normal 10px Arial;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+}
+  
+.fa {
+    font-size: 50px;
+    color: #fff;
+    padding: 10px 0;
+    width: 40px;
+    margin-left: 8px;
+}
+  
+.fl-fl:hover {
+    right: 0;
+}
+  
+.fl-fl a {
+    color: #fff !important;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px !important;
+    vertical-align: top !important;
+}
+  
+.float-fb {
+    top: 160px;
+}
+  
+.float-ig {
+    top: 220px;
+}
+
+/* Styling för footern börjar här */
+
 .footer {
     grid-area: fo;
     height: 70px;
@@ -221,36 +276,4 @@ grid-template-rows: repeat(8, 1fr);
     display: flex;
     justify-content: center;
     background-color: rgb(70, 134, 106);
-}
-
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-  }
-  
-  /* Add a hover effect if you want */
-  .fa:hover {
-    opacity: 0.7;
-  }
-  
-  /* Set a specific color for each brand */
-  
-  /* Facebook */
-  .fa-facebook {
-    background: #0f0f0f;
-    color: white;
-  }
-  
-  /* Twitter */
-  .fa-instagram {
-    background: #080808;
-    color: white;
-  }
-
-body {
-    background-color: rgb(214, 234, 224);
 }
