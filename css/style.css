@@ -173,20 +173,22 @@ body {
     position: sticky;
     top: 0;
     width: 100%;
-    background: rgb(131, 172, 166);
+    background: rgb(70, 134, 106);
     color: #f1f1f1;
 }
 .header {
     grid-area: he;
-    background-color: rgb(70, 134, 106);
+    background-color:rgb(131, 172, 166);
     display: flex;
     align-items: stretch;
     justify-content: space-between;
 }
 #logga {
-    height: 50px;
-    width: auto;
-    padding: 10px;
+    height: 20vh;
+    width: 10vw;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
 }
 #navigation-links {
     list-style: none;
@@ -210,8 +212,8 @@ body {
     grid-area: fl;
     width: auto;
     height: 55vh;
-    padding: 10px 10px 10px;
-    left: 100px;
+    padding: 10px;
+    background-image: url(../img/Gömmet3.jpg);    
 }
 
 .text {
@@ -267,13 +269,13 @@ body {
     top: 220px;
 }
 
-/* Styling för footern börjar här */
-
+/* Footer CSS */
 .footer {
     grid-area: fo;
-    height: 70px;
-    bottom: 0;
+    background-color: #000000;
+    padding: 5rem 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    background-color: rgb(70, 134, 106);
-}
+    align-items: center;
+  }
