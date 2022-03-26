@@ -173,12 +173,12 @@ body {
     position: sticky;
     top: 0;
     width: 100%;
-    background: rgb(70, 134, 106);
+    background: rgb(131, 172, 166);
     color: #f1f1f1;
 }
 .header {
     grid-area: he;
-    background-color:rgb(131, 172, 166);
+    background-color:rgb(70, 134, 106);
     display: flex;
     align-items: stretch;
     justify-content: space-between;
@@ -226,8 +226,8 @@ body {
 /* Footer CSS */
 .footer {
     grid-area: fo;
-    width: ;
-    background-color: rgb(131, 172, 166);
+    width: auto ;
+    background-color: rgb(70, 134, 106);
     padding: 2rem 0;
     display: flex;
     justify-content: center;
