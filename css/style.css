@@ -61,14 +61,12 @@ grid-template-rows: repeat(7, 1fr);
     "mh mh mh"
     "he he he"
     "fl fl fl"
-    "ti2 ti2 in"
-    "br2 br2 in"
-    "br2 br2 in"
-    "br2 br2 in"
+    "ti2 img1 in"
+    "br2 img2 in"
     "fo fo fo"
 ;
 grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(8, 1fr);
+grid-template-rows: repeat(6, 1fr);
 }
 
 #title-sid2 {
@@ -79,6 +77,18 @@ grid-template-rows: repeat(8, 1fr);
     padding: 20px;
 }
 
+#brödtext2 {
+    grid-area: br2;
+    border: solid;
+}
+
+#img1-sid2 {
+    grid-area: img1;
+    background-image: url(../img/gården1.jpg);
+    width: 10vw;
+    height: 10vh;
+}
+
 .info {
     grid-area: in;
     width: auto;
@@ -87,14 +97,11 @@ grid-template-rows: repeat(8, 1fr);
     padding: 10px 10px 0px;
 }
 
-#image-sid2 {
+#image3-sid2 {
     width: auto;
-    height: 300px;
-}
-
-#brödtext2 {
-    grid-area: br2;
-    border: solid;
+    height: 200px;
+    width: auto;
+    padding: 5px;
 }
 
 .wrapper3 {
@@ -105,12 +112,18 @@ grid-template-rows: repeat(8, 1fr);
     "mh mh"
     "he he"
     "fl fl"
-    "s3 s3"
+    "br3 in"
     "fo fo"
 ;
 grid-template-columns: repeat(2, 1fr);
 grid-template-rows: repeat(7, 1fr);
 }
+
+#brödtext3 {
+    grid-area: br3;
+}
+
+
 
 .wrapper4 {
     display: grid;
@@ -178,24 +191,26 @@ body {
 }
 .header {
     grid-area: he;
+    width: auto;
+    height: 15vh;
     background-color:rgb(70, 134, 106);
     display: flex;
     align-items: stretch;
     justify-content: space-between;
 }
 .logga {
-    height: 20vh;
-    width: 10vw;
-    padding: 5px;
-    display: flex;
-    justify-content: space-between;
+    height: 15vh;
+    width: 9vw;
+    top: 0;
+    margin-left: 20px;
 }
+
 #navigation-links {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     width: 600px;
-    padding: 20px 10px 10px;
 }
 .link-list {
     text-decoration: none;
@@ -226,22 +241,41 @@ body {
 /* Footer CSS */
 .footer {
     grid-area: fo;
-    width: auto ;
+    width: auto;
     background-color: rgb(70, 134, 106);
-    padding: 2rem 0;
     display: flex;
-    justify-content: center;
-    align-items: stretch;
-  }
+    justify-content: space-evenly;
+}
 
-.social_icons {
+/* Style all font awesome icons */
+.fa {
     grid-area: fo;
-    display: flex;
-    width: 100px;
-
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+  
+  /* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+  
+/* Set a specific color for each brand */
+  
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+  
+/* Instgram */
+.fa-instgram {
+    background: #55ACEE;
+    color: white;
 }
 
 #logga_footer {
-    grid-area: fo;
     width: 8rem;
 }
