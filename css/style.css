@@ -16,7 +16,7 @@
     "s1 s1"
     "fo fo"
 ;
-grid-template-columns: repeat(2);
+grid-template-columns: repeat(2, 1fr);
 grid-template-rows: repeat(7, 1fr);
 }
 
@@ -74,34 +74,45 @@ grid-template-rows: repeat(6, 1fr);
     border: solid;
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 10px;
+    width: auto;
+    height: 6vh;
 }
 
 #brödtext2 {
     grid-area: br2;
     border: solid;
+    height: auto;
+    width: auto;
 }
 
 #img1-sid2 {
     grid-area: img1;
-    background-image: url(../img/gården1.jpg);
-    width: 10vw;
-    height: 10vh;
+    width: 20vw;
+    height: 25vh;
+    padding: 10px;
 }
 
-.info {
+#img2-sid2 {
+    grid-area: img2;
+    width: 20vw;
+    height: 25vh;
+    padding: 10px;
+}
+.info2 {
     grid-area: in;
-    width: auto;
-    height: 40vh;
-    border: solid;
-    padding: 10px 10px 0px;
+    display: flex;
+    width: 20vw;
+    height: 50vh;
+    padding: 20px;
+    border-left: 3px solid #000;
+    flex-direction: column;
 }
 
-#image3-sid2 {
-    width: auto;
-    height: 200px;
-    width: auto;
-    padding: 5px;
+#img3-sid2 {
+    height: 15vh;
+    width: 10vw;
+    right: 0;
 }
 
 .wrapper3 {
@@ -112,7 +123,7 @@ grid-template-rows: repeat(6, 1fr);
     "mh mh"
     "he he"
     "fl fl"
-    "br3 in"
+    "br3 in2"
     "fo fo"
 ;
 grid-template-columns: repeat(2, 1fr);
@@ -121,9 +132,21 @@ grid-template-rows: repeat(7, 1fr);
 
 #brödtext3 {
     grid-area: br3;
+    display: flex;
+    flex-direction: column;
+    border: solid;
 }
 
-
+.info {
+    grid-area: inf;
+    width: 30%;
+    background-color: lightpink;
+    height: 90%;
+    float: right;
+    min-height: 1px;
+    border-left: 3px solid #000;
+    flex-direction: column;
+}
 
 .wrapper4 {
     display: grid;
@@ -145,22 +168,23 @@ grid-template-rows: repeat(8, 1fr);
 
 #title4 {
     grid-area: ti4;
-    border: solid;
     display: flex;
     justify-content: center;
-    padding: 10px;
+    padding: 5px 10px 5px;
+    font-size: 1rem;
 }
 
 #brödtext4 {
     grid-area: br4;
-    border: solid;
+    padding: 0px 80px 10px;
+    font-size: 0.8rem;
 }
 
 #adress {
     grid-area: ad;
     display: flex;
     justify-content: center;
-    border: solid;
+    padding: 10px 10px 0px;
 }
 
 #maps {
@@ -192,19 +216,17 @@ body {
 .header {
     grid-area: he;
     width: auto;
-    height: 15vh;
+    height: 12vh;
     background-color:rgb(70, 134, 106);
     display: flex;
     align-items: stretch;
     justify-content: space-between;
 }
 .logga {
-    height: 15vh;
-    width: 9vw;
-    top: 0;
-    margin-left: 20px;
+    height: 9vh;
+    width: 7vw;
+    padding: 15px 30px 20px;
 }
-
 #navigation-links {
     list-style: none;
     display: flex;
@@ -226,9 +248,9 @@ body {
 .flygbild {
     grid-area: fl;
     width: auto;
-    height: 55vh;
-    padding: 10px;
+    height: 50vh;
     background-image: url(../img/Gömmet3.jpg);
+    background-size: cover;
 }
 
 .text {
@@ -244,29 +266,47 @@ body {
     background-color: rgb(70, 134, 106);
     display: flex;
     justify-content: center;
-  }
+    height: 11vh;
+    bottom: 0;
+}
   
-  #footer_logo {
+#logo_footer {
     cursor: pointer;
-    text-decoration: none;
-    width: 8rem;
-  }
-  
-  .social__icon--link {
+    width: 7vw;
+    height: 10vh;
+}
+
+.social__icon--link {
     color: #fff;
     font-size: 24px;
-  }
-  
-  .social__icons {
+}
+
+.social__icons {
     width: 240px;
-  }
+    justify-content: space-evenly;
+    flex-direction: row;
+}
   
 @media screen and (max-width: 768px) {
-    #footer__logo {
+    #logo_footer {
       margin-bottom: 2rem;
     }
   
     .social__media--wrap {
       flex-direction: column;
     }
+}
+
+/* Styling för info-sektionen i sida 2&3  */
+
+.öppettider {
+    padding: 10px;
+}
+
+.betalning {
+    padding: 10px;
+}
+
+.regler{
+    padding: 10px 30px 10px;
 }
