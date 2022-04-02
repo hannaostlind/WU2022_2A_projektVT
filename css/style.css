@@ -108,7 +108,6 @@ grid-template-rows: repeat(6, 1fr);
 #info-sid2 {
     grid-area: in2;
     width: 40%;
-    background-color: lightpink;
     height: 90%;
     float: right;
     min-height: 1px;
@@ -170,17 +169,15 @@ grid-template-rows: repeat(7, 1fr);
     grid-area: in3;
     display: flex;
     width: 20vw;
-    height: 50vh;
+    height: 30vh;
     padding: 20px;
     border-left: 3px solid #000;
     flex-direction: column;
-    justify-content: flex-end;
+    
 }
 
 #öppettider-innehåll {
     padding: 10px;
-    display: flex;
-    flex-direction: column;
 }
 
 #öppettider-sid3 {
@@ -194,7 +191,7 @@ grid-template-rows: repeat(7, 1fr);
 }
 
 #regler-sid3 {
-    padding: 10px 30px 10px;
+    padding: 10px;
 }
 
 .wrapper4 {
