@@ -239,6 +239,9 @@ grid-template-rows: repeat(8, 1fr);
 #maps {
     grid-area: ma;
     padding: 0px 0px 15px;
+    width: 100%;
+    height: 400px;
+    
 }
 
 /* Styling för element som förekommer i alla html-dokument */
