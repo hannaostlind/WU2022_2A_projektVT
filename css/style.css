@@ -76,7 +76,6 @@ grid-template-rows: repeat(6, 1fr);
 
 #title-sid2 {
     grid-area: ti2;
-    border: solid;
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -86,7 +85,6 @@ grid-template-rows: repeat(6, 1fr);
 
 #text2 {
     grid-area: br2;
-    border: solid;
     height: auto;
     width: auto;
 }
@@ -163,6 +161,7 @@ grid-template-rows: repeat(7, 1fr);
     display: flex;
     flex-direction: column;
     border: solid;
+    justify-content: space-evenly;
 }
 
 #info-sid3 {
