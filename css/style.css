@@ -35,7 +35,7 @@ grid-template-rows: repeat(7, 1fr);
     padding: 15px;
 }
 
-#brödtext1 {
+#text1 {
     grid-area: te1;
     border: solid;
     padding: 10px 50px 20px;
@@ -84,7 +84,7 @@ grid-template-rows: repeat(6, 1fr);
     height: 6vh;
 }
 
-#brödtext2 {
+#text2 {
     grid-area: br2;
     border: solid;
     height: auto;
@@ -117,13 +117,13 @@ grid-template-rows: repeat(6, 1fr);
     right: 0;
 }
 
-#öppettider-innehåll {
+#hours-innehåll {
     padding: 10px;
     display: flex;
     flex-direction: column;
 }
 
-#öppettider-si2 {
+#hours-si2 {
     padding: 10px;
     display: flex;
     justify-content: flex-end;
@@ -158,7 +158,7 @@ grid-template-columns: repeat(2, 1fr);
 grid-template-rows: repeat(7, 1fr);
 }
 
-#brödtext3 {
+#text3 {
     grid-area: br3;
     display: flex;
     flex-direction: column;
@@ -176,11 +176,11 @@ grid-template-rows: repeat(7, 1fr);
     
 }
 
-#öppettider-innehåll {
+#hours-innehåll {
     padding: 10px;
 }
 
-#öppettider-sid3 {
+#hours-sid3 {
     padding: 10px;
     display: flex;
     justify-content: flex-end;
@@ -220,7 +220,7 @@ grid-template-rows: repeat(8, 1fr);
     font-size: 1rem;
 }
 
-#brödtext4 {
+#text4 {
     grid-area: br4;
     padding: 0px 100px 10px;
     font-size: 0.8rem;
@@ -300,7 +300,7 @@ body {
     grid-area: fl;
     width: auto;
     height: 50vh;
-    background-image: url(../img/Gömmet3.jpg);
+    background-image: url(../img/g3.jpg);
     background-size: cover;
 }
 
