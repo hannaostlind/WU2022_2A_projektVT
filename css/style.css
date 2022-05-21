@@ -266,7 +266,7 @@ body {
     flex-direction: row;
     align-items: center;
 }
-  
+/*
 @media screen and (max-width: 768px) {
     #logo_footer {
       margin-bottom: 2rem;
@@ -276,3 +276,4 @@ body {
       flex-direction: column;
     }
 }
+*/
