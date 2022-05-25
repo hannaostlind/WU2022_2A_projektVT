@@ -148,6 +148,7 @@ grid-template-rows: repeat(7, 1fr);
     flex-direction: column;
     border: solid;
     justify-content: space-evenly;
+    padding: 10px;
 }
 
 #info-sid3 {
